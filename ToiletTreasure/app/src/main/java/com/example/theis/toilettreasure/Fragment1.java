@@ -19,7 +19,3 @@ public class Fragment1 extends android.support.v4.app.Fragment {
         return root;
     }
 }
-
-// test 1 !
-// test 2 !!
-// test 3 !!!
