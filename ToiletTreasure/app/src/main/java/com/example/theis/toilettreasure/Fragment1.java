@@ -18,4 +18,6 @@ public class Fragment1 extends android.support.v4.app.Fragment {
         View root = inflater.inflate(R.layout.fragment_test_one_layout,container, false);
         return root;
     }
+
+    //Git changes
 }
