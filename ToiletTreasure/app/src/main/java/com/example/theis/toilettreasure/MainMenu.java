@@ -24,8 +24,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
 
     ImageButton b, messages;
     Button profile;
-    FrameLayout profileContainer;
-    FrameLayout menuContainer;
+    FrameLayout profileContainer, menuContainer;
     boolean profileInflated = false;
     Animation mAnimation;
     Animation pAnimation;
@@ -42,10 +41,10 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
         messages = (ImageButton) root.findViewById(R.id.show_messages);
         profileContainer = (FrameLayout) root.findViewById(R.id.fragment_profile);
         Bundle arg = getArguments();
-        viewPager = (ViewPager) root.findViewById(R.id.menus);
+        viewPager = (ViewPager) root.findViewById(R.id.menus_fragment);
         PagerAdapter padapter = new PagerAdapter(getActivity().getSupportFragmentManager());
         viewPager.setAdapter(padapter);
-        menuContainer = (FrameLayout) root.findViewById(R.id.menus_fragment);
+        menuContainer = (FrameLayout) root.findViewById(R.id.menus);
 
 
 
@@ -91,13 +90,9 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
             profileInflated = false;
 
         }
-        else if(v == messages){
-            getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(menuContainer.getId(), new MessagesFragment())
-                    .addToBackStack(null)
-                    .commit();
 
-        }
+
+        //test 4
 
 
 
@@ -108,11 +103,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
     }
 
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getActivity().getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu);
-        return true;
-    }
+
 
 
 
