@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ToiletTreasure</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_user">Opret bruger</string>
+    <string name="forgot_password">Har du glemt dit password eller dit brugernavn?</string>
+    <string name="profile">Profile</string>
+    <string name="logo_name">ToiletTreasuer</string>
+
+</resources>
