@@ -2,6 +2,7 @@ package com.example.theis.toilettreasure;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -22,7 +23,7 @@ import android.widget.ImageButton;
  */
 public class MainMenu extends android.support.v4.app.Fragment implements View.OnClickListener {
 
-    ImageButton b, messages;
+    ImageButton b, messages, location;
     Button profile;
     FrameLayout profileContainer, menuContainer;
     boolean profileInflated = false;
@@ -38,6 +39,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
         View root = i.inflate(R.layout.mainmenu_layout, container, false);
         b = (ImageButton) root.findViewById(R.id.show_profile);
         profile = (Button) root.findViewById(R.id.profile_knap);
+        location = (ImageButton) root.findViewById(R.id.show_friends);
         messages = (ImageButton) root.findViewById(R.id.show_messages);
         profileContainer = (FrameLayout) root.findViewById(R.id.fragment_profile);
         Bundle arg = getArguments();
@@ -57,12 +59,22 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
 
         setHasOptionsMenu(true);
         b.setOnClickListener(this);
+        location.setOnClickListener(this);
         messages.setOnClickListener(this);
         profile.setOnClickListener(this);
         return root;
     }
     @Override
     public void onClick(View v) {
+        if(v == location){
+            startLocalization();
+                    /*
+                    getFragmentManager().beginTransaction()
+                    .replace(R.id.hovedlayout, new LocationFragment())
+                    .addToBackStack(null)
+                    .commit();
+                    */
+        }
         if(mAnimation != null){
             mAnimation.cancel();
         }
@@ -90,21 +102,6 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
             profileInflated = false;
 
         }
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
+    private void startLocalization() { startActivity(new Intent(getActivity(), Localization.class)); }
 }
