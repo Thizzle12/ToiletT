@@ -33,7 +33,7 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
 
 
                 ImageView billede = (ImageView) view.findViewById(R.id.message_image);
-                billede.setImageResource(R.drawable.rasmusprofil);
+                billede.setImageResource(R.drawable.smiley);
 
                 return view;
             }

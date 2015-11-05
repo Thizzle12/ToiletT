@@ -42,7 +42,7 @@
             android:layout_gravity="center"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/smiley"
+            android:background="@drawable/login_green"
             android:id="@+id/show_messages"
 
             />
@@ -57,7 +57,7 @@
 
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/treasure"
+            android:background="@drawable/login_blue"
             android:id="@+id/show_toilets"
             android:layout_toRightOf="@+id/show_messages"
 
@@ -72,7 +72,7 @@
             android:layout_gravity="center"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/newbutton"
+            android:background="@drawable/login_green"
             android:id="@+id/show_profile"
             android:layout_toRightOf="@+id/show_toilets"
 
@@ -87,7 +87,7 @@
 
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/treasure"
+            android:background="@drawable/sattelit"
             android:id="@+id/show_friends"
             android:layout_toRightOf="@+id/show_profile"
 
@@ -101,8 +101,8 @@
             android:layout_gravity="center"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/treasure"
-            android:id="@+id/show_shit"
+            android:background="@drawable/gear"
+            android:id="@+id/show_settings"
             android:layout_toRightOf="@+id/show_friends"
             android:layout_marginRight="10dp"
 
