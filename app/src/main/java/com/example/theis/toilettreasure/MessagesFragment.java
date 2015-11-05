@@ -56,7 +56,4 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
 
     }
 
-
-
-
 }

@@ -55,12 +55,12 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
                 .add(profileContainer.getId(), new ProfileFragment())
                 .addToBackStack(null)
                 .commit();
-
+/*
         getActivity().getSupportFragmentManager().beginTransaction()
                 .add(menuContainer.getId(), new MessagesFragment())
                 .addToBackStack(null)
                 .commit();
-
+*/
         setHasOptionsMenu(true);
         b.setOnClickListener(this);
         location.setOnClickListener(this);
