@@ -102,7 +102,7 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:background="@drawable/treasure"
-            android:id="@+id/show_shit"
+            android:id="@+id/show_settings"
             android:layout_toRightOf="@+id/show_friends"
             android:layout_marginRight="10dp"
 

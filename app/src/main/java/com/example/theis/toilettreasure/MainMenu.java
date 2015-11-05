@@ -23,7 +23,7 @@ import android.widget.ImageButton;
  */
 public class MainMenu extends android.support.v4.app.Fragment implements View.OnClickListener {
 
-    ImageButton b, messages, location;
+    ImageButton b, messages, location, settings;
     Button profile;
     FrameLayout profileContainer, menuContainer;
     boolean profileInflated = false;
@@ -41,6 +41,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
         profile = (Button) root.findViewById(R.id.profile_knap);
         location = (ImageButton) root.findViewById(R.id.show_friends);
         messages = (ImageButton) root.findViewById(R.id.show_messages);
+        settings = (ImageButton) root.findViewById(R.id.show_settings);
         profileContainer = (FrameLayout) root.findViewById(R.id.fragment_profile);
         Bundle arg = getArguments();
         viewPager = (ViewPager) root.findViewById(R.id.menus);
@@ -62,6 +63,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
         location.setOnClickListener(this);
         messages.setOnClickListener(this);
         profile.setOnClickListener(this);
+        settings.setOnClickListener(this);
         return root;
     }
     @Override
@@ -102,6 +104,10 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
             profileInflated = false;
 
         }
+        else if (v == settings){
+            startSettings();
+        }
     }
     private void startLocalization() { startActivity(new Intent(getActivity(), Localization.class)); }
+    private void startSettings() { startActivity(new Intent(getActivity(), Settings.class)); }
 }
