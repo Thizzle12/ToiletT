@@ -18,7 +18,7 @@ public class ProfileFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater i, ViewGroup container, Bundle savedInstanceState) {
         View root = i.inflate(R.layout.profile_layout, container, false);
         profilePic = (ImageView) root.findViewById(R.id.profile_picture);
-        profilePic.setImageResource(R.drawable.henrikprofil);
+        profilePic.setImageResource(R.drawable.smiley);
 
 
         return root;
