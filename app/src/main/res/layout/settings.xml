@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent" android:layout_width="match_parent">
 
     <CheckBoxPreference
-        android:key="userLocalization"
+        android:key="Localization"
         android:title="Localization"
         android:summary="Allow for the use of localization to determine your current position"
         android:defaultValue="true" />
@@ -33,16 +33,5 @@
         android:defaultValue="true" />
 
     <!--       android:password="true" -->
-    <!--
-        <PreferenceScreen
-            android:key="underskaerm"
-            android:title="En underskærm">
-            <CheckBoxPreference
-                android:key="indst1"
-                android:title="Indstilling 1" />
-            <CheckBoxPreference
-                android:key="indst2"
-                android:title="Indstilling 2" />
-        </PreferenceScreen>
-        -->
+
     </PreferenceScreen>

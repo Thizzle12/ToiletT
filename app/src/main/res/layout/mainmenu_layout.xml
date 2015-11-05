@@ -42,8 +42,8 @@
             android:layout_gravity="center"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/login_green"
-            android:id="@+id/show_messages"
+            android:background="@drawable/poop"
+            android:id="@+id/postmessage"
 
             />
 

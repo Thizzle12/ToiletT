@@ -50,10 +50,10 @@ public class Localization extends Activity implements LocationListener{
         kriterium.setAccuracy(Criteria.ACCURACY_FINE);
         String udbyder = locationManager.getBestProvider(kriterium, true); // giver "gps" hvis den er slået til
 
-        textView.append("\n\n Benytter følgende type udbyder: " + udbyder + "\n\n");
+        textView.append("\n\n Using following provider: " + udbyder + "\n\n");
 
         if (udbyder == null) {
-            textView.append("\n\nFejl! Der var ikke tændt for nogen udbyder. Tænd for GPS eller netværksbaseret stedplacering og prøv igen.");
+            textView.append("\n\nError! You haven't turned on any kind oflocalization providers. Turn on GPS or network-based localization and try again.");
             startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
             return;
         }
@@ -68,7 +68,7 @@ public class Localization extends Activity implements LocationListener{
                 List<Address> adresser = geocoder.getFromLocation(sted.getLatitude(), sted.getLongitude(), 1);
                 if (adresser != null && adresser.size() > 0) {
                     Address adresse = adresser.get(0);
-                    textView.append("NÆRMESTE ADRESSE: \n" + adresse + "\n\n");
+                    textView.append("Current location: \n" + adresse.getLocality() + "\n\n");
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();

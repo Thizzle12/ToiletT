@@ -23,7 +23,7 @@ import android.widget.ImageButton;
  */
 public class MainMenu extends android.support.v4.app.Fragment implements View.OnClickListener {
 
-    ImageButton b, messages, location, settings;
+    ImageButton b, messages, location, settings, postmessage;
     Button profile;
     FrameLayout profileContainer, menuContainer;
     boolean profileInflated = false;
@@ -42,6 +42,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
         location = (ImageButton) root.findViewById(R.id.show_friends);
         messages = (ImageButton) root.findViewById(R.id.show_messages);
         settings = (ImageButton) root.findViewById(R.id.show_settings);
+        postmessage = (ImageButton) root.findViewById(R.id.postmessage);
         profileContainer = (FrameLayout) root.findViewById(R.id.fragment_profile);
         Bundle arg = getArguments();
         viewPager = (ViewPager) root.findViewById(R.id.menus);
@@ -64,14 +65,20 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
         setHasOptionsMenu(true);
         b.setOnClickListener(this);
         location.setOnClickListener(this);
-        messages.setOnClickListener(this);
         profile.setOnClickListener(this);
         settings.setOnClickListener(this);
+        postmessage.setOnClickListener(this);
         return root;
     }
     @Override
     public void onClick(View v) {
-        if(v == location){
+        if(v == postmessage){
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.hovedlayout, new PostMessage())
+                    .addToBackStack(null)
+                    .commit();
+        }
+        else if(v == location){
             startLocalization();
                     /*
                     getFragmentManager().beginTransaction()
