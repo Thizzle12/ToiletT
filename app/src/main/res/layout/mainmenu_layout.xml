@@ -87,7 +87,7 @@
 
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/login_blue"
+            android:background="@drawable/sattelit"
             android:id="@+id/show_friends"
             android:layout_toRightOf="@+id/show_profile"
 
@@ -101,7 +101,7 @@
             android:layout_gravity="center"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/login_green"
+            android:background="@drawable/gear"
             android:id="@+id/show_settings"
             android:layout_toRightOf="@+id/show_friends"
             android:layout_marginRight="10dp"

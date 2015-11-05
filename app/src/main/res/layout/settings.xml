@@ -4,8 +4,32 @@
 
     <CheckBoxPreference
         android:key="userLocalization"
-        android:title="Use localization"
+        android:title="Localization"
         android:summary="Allow for the use of localization to determine your current position"
+        android:defaultValue="true" />
+
+    <PreferenceScreen
+        android:key="subscreen"
+        android:title="Prefered location provider"
+        android:summary="It will choose the best of the selected services">
+        <CheckBoxPreference
+            android:key="GPS"
+            android:title="GPS" />
+        <CheckBoxPreference
+            android:key="Network"
+            android:title="Network" />
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+        android:key="Vibrations"
+        android:title="Vibrations"
+        android:summary="Allow for thr app to vibrate your phone"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="Notifications"
+        android:title="Notifications"
+        android:summary="Allow for notifications from the app"
         android:defaultValue="true" />
 
     <!--       android:password="true" -->
