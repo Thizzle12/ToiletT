@@ -28,8 +28,7 @@ public class ProfileFragment extends android.support.v4.app.Fragment implements 
         super.onCreate(savedInstanceState);
         View root = i.inflate(R.layout.profile_layout, container, false);
         profilePic = (ImageView) root.findViewById(R.id.profile_picture);
-<<<<<<< HEAD
-        profilePic.setImageResource(R.drawable.henrikprofil);
+
         listText = (FrameLayout) root.findViewById(R.id.listMenu);
 
 
@@ -37,9 +36,7 @@ public class ProfileFragment extends android.support.v4.app.Fragment implements 
                 .add(listText.getId(), new ProfileMenu())
                 .addToBackStack(null)
                 .commit();
-=======
         profilePic.setImageResource(R.drawable.smiley);
->>>>>>> origin/master
 
             return root;
 
