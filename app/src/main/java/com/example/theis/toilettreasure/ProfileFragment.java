@@ -5,23 +5,44 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Theis on 12-10-2015.
  */
 
-public class ProfileFragment extends android.support.v4.app.Fragment {
+public class ProfileFragment extends android.support.v4.app.Fragment implements AdapterView.OnItemClickListener {
 
     ImageView profilePic;
+    FrameLayout listText;
+
 
     public View onCreateView(LayoutInflater i, ViewGroup container, Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         View root = i.inflate(R.layout.profile_layout, container, false);
         profilePic = (ImageView) root.findViewById(R.id.profile_picture);
         profilePic.setImageResource(R.drawable.henrikprofil);
+        listText = (FrameLayout) root.findViewById(R.id.listMenu);
 
 
-        return root;
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .add(listText.getId(), new ProfileMenu())
+                .addToBackStack(null)
+                .commit();
+
+            return root;
+
+        }
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
 
     }
-}
+    }

@@ -3,9 +3,9 @@
     android:fillAfter="true">
 
     <translate
-        android:fromXDelta="900"
+        android:fromXDelta="100"
         android:toXDelta="-300"
-        android:duration="500"
+        android:duration="400"
         />
 
 </set>

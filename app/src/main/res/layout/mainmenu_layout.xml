@@ -17,7 +17,7 @@
         <Button
             android:layout_width="45dp"
             android:layout_height="fill_parent"
-            android:background="@drawable/profilknap"
+            android:background="@drawable/More"
             android:id="@+id/profile_knap"
             />
 

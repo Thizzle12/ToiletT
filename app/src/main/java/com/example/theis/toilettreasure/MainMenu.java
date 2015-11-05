@@ -28,7 +28,7 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
     boolean profileInflated = false;
     Animation mAnimation;
     Animation pAnimation;
-    OvershootInterpolator interpolator = new OvershootInterpolator(2);
+    OvershootInterpolator interpolator = new OvershootInterpolator(0);
     ViewPager viewPager;
 
     @Override
@@ -53,7 +53,10 @@ public class MainMenu extends android.support.v4.app.Fragment implements View.On
                 .addToBackStack(null)
                 .commit();
 
-
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .add(menuContainer.getId(), new MessagesFragment())
+                .addToBackStack(null)
+                .commit();
 
         setHasOptionsMenu(true);
         b.setOnClickListener(this);
