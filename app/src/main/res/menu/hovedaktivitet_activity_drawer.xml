@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/my_t" android:icon="@android:drawable/ic_menu_upload"
+            android:title="Mine Tanker" />
+        <item android:id="@+id/top_t" android:icon="@android:drawable/ic_menu_add"
+            android:title="Top Tanker" />
+        <item android:id="@+id/new_t" android:icon="@android:drawable/ic_popup_reminder"
+            android:title="Nyest Tanker" />
+        <item android:id="@+id/close_t" android:icon="@android:drawable/ic_menu_mylocation"
+            android:title="Tætteste Tanker"/>
+
+    </group>
+
+    <item android:title="Andet">
+        <menu>
+            <item android:id="@+id/inst" android:icon="@android:drawable/ic_menu_manage"
+                android:title="Indstillinger" />
+        </menu>
+    </item>
+
+</menu>
