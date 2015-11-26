@@ -6,12 +6,15 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_hovedaktivitet" tools:context=".hovedaktivitet">
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <!--
+        <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/refresh"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
+        -->
     <TextView android:text="Welcome to Toilet Treasure" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <!--
     </android.support.v4.widget.SwipeRefreshLayout>
-
+    -->
 </RelativeLayout>

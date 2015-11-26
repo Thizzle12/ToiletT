@@ -24,7 +24,7 @@ public class Hovedaktivitet extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ViewPager viewPager;
-    SwipeRefreshLayout swiperefresh;
+    //SwipeRefreshLayout swiperefresh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,13 +32,13 @@ public class Hovedaktivitet extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-
+/*
         swiperefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
               public void onRefresh() {
                   
               }
         });
-
+*/
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
