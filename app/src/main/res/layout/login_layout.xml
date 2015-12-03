@@ -5,10 +5,9 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff">
+    android:background="@drawable/venstremenu_bagrundsfarve">
 
     <LinearLayout
-        android:background="#ffffff"
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
@@ -16,17 +15,18 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
+            android:text="The New Way To Socailice"
             android:textColor="#000000"
-            android:textSize="50dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
             android:gravity="center"
             android:id="@+id/app_name"/>
 
         <ImageView
             android:paddingTop="20dp"
             android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:src="@drawable/applogo"
+            android:layout_height="200dp"
+            android:src="@drawable/oie_transparent"
             android:id="@+id/toiletLogo"
             android:layout_gravity="center_horizontal" />
 
@@ -36,21 +36,20 @@
 
 
     <LinearLayout
-        android:background="#ffffff"
         android:layout_weight="10"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
-            android:layout_marginTop="50dp"
-            android:layout_width="300dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="245dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:inputType="textEmailAddress"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:hint="@string/email"
-            android:textColorHint="#000000"
+            android:textColorHint="#ffffff"
             android:id="@+id/e_mail"
             android:layout_gravity="center_horizontal" />
 
@@ -62,15 +61,16 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:gravity="center"
             android:hint="@string/password"
-            android:textColorHint="#000000"
+            android:textColorHint="#ffffff"
             android:id="@+id/password"
             android:layout_gravity="center_horizontal"/>
 
         <Button
             android:gravity="center"
             android:background="@drawable/newbutton"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
             tools:text="@string/login"
             android:id="@+id/login"
             android:layout_gravity="center_horizontal" />
@@ -84,6 +84,7 @@
 
             <Button
                 android:gravity="center"
+                android:background="@drawable/newbutton"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/create_user"
@@ -100,7 +101,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/forgot_password"
-                android:textSize="18dp"
+                android:textSize="15dp"
                 android:textColor="#000000"
                 android:layout_below="@+id/create_user"
                 android:id="@+id/forgot_password"

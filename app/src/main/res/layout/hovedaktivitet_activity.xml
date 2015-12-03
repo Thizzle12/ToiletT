@@ -38,7 +38,10 @@
                 app:pstsShouldExpand="true"
                 app:pstsTextAllCaps="true"
                 android:layout_width="match_parent"
-                android:layout_height="48dp" />
+                android:layout_height="48dp"
+                android:background="#c0c0c0"
+                app:pstsIndicatorColor="@color/colorPrimary"
+                app:pstsDividerColor="@color/colorPrimary"/>
 
 
             <android.support.v4.view.ViewPager
@@ -67,6 +70,8 @@
         android:layout_width="wrap_content" android:layout_height="match_parent"
         android:layout_gravity="start" android:fitsSystemWindows="true"
         app:headerLayout="@layout/hoved_venstremenu_top"
-        app:menu="@menu/hovedaktivitet_activity_drawer" />
+        app:menu="@menu/hovedaktivitet_activity_drawer"
+        android:background="#808080"
+        app:itemTextColor="@color/white"/>
 
 </android.support.v4.widget.DrawerLayout>

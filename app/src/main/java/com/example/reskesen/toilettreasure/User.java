@@ -8,7 +8,7 @@ public class User {
 
     private String password;
     private String fullName;
-    private int spititanimal;
+    private int spiritanimal;
 
     public void setPassword(String password) {
         this.password = password;
@@ -18,19 +18,19 @@ public class User {
         this.fullName = fullName;
     }
 
-    public int getSpititanimal() {
-        return spititanimal;
+    public int getSpiritanimal() {
+        return spiritanimal;
     }
 
-    public void setSpititanimal(int spititanimal) {
-        this.spititanimal = spititanimal;
+    public void setSpiritanimal(int spititanimal) {
+        this.spiritanimal = spititanimal;
     }
 
     public User(String fullName, String password, int spiritanimal) {
         this.fullName = fullName;
         this.password = password;
 
-        this.spititanimal = spiritanimal;
+        this.spiritanimal = spiritanimal;
 
     }
 
