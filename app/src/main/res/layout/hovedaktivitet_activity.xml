@@ -25,20 +25,31 @@
 
         </android.support.design.widget.AppBarLayout>
 
-        <FrameLayout
+        <RelativeLayout
 
             android:id="@+id/hovedakti_indhold"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                app:pstsShouldExpand="true"
+                app:pstsTextAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+
             <android.support.v4.view.ViewPager
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
-                android:id="@+id/VP"/>
+                android:id="@+id/VP"
+                android:layout_below="@id/tabs"/>
 
 
-        </FrameLayout>
+
+        </RelativeLayout>
         <!--
         <include layout="@layout/forside_fragmenter" />
         -->

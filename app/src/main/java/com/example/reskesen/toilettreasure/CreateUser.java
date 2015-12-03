@@ -43,7 +43,7 @@ public class CreateUser extends android.support.v4.app.Fragment implements View.
             if(!username.getText().toString().equals("") && password1.getText().toString().equals(confirm_password1.getText().toString())){
 
                 Firebase ref = firebase.child("Users").child(username.getText().toString());
-                User user = new User(username.getText().toString(), password1.getText().toString());
+                User user = new User(username.getText().toString(), password1.getText().toString(), 1);
                 ref.setValue(user);
 
                 getFragmentManager().beginTransaction()

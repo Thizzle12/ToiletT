@@ -8,10 +8,29 @@ public class User {
 
     private String password;
     private String fullName;
+    private int spititanimal;
 
-    public User(String fullName, String password) {
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public int getSpititanimal() {
+        return spititanimal;
+    }
+
+    public void setSpititanimal(int spititanimal) {
+        this.spititanimal = spititanimal;
+    }
+
+    public User(String fullName, String password, int spiritanimal) {
         this.fullName = fullName;
         this.password = password;
+
+        this.spititanimal = spiritanimal;
 
     }
 

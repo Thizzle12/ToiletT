@@ -25,6 +25,8 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
     EditText username, password;
     Button login, createUser;
     Firebase firebase;
+    String userNameData;
+    int spiritanimal;
 
 
     public View onCreateView(LayoutInflater i, ViewGroup container, Bundle savedInstanceState) {
@@ -59,7 +61,11 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
                                                   try {
                                                       String response = dataSnapshot.child(username.getText().toString()).child("password").getValue().toString();
+                                                      System.out.println("username: " + username.getText().toString() + " password: " + response);
+
                                                         if(response.equals(password.getText().toString())){
+                                                            userNameData = username.getText().toString();
+                                                            spiritanimal = Integer.parseInt(dataSnapshot.child(userNameData).child("spiritanimal").getValue().toString());
                                                             startHoved();
 
                                                         } else{
@@ -68,7 +74,7 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
 
                                                   } catch (Exception e) {
-                                                      System.out.println(e.getMessage());
+                                                      password.setText("");
                                                       Toast.makeText(getActivity(), "Invalid Username or Password!", Toast.LENGTH_SHORT).show();
                                                   }
                                               }
@@ -93,6 +99,12 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
     }
 
 
-    private void startHoved() { startActivity(new Intent(getActivity(), Hovedaktivitet.class)); }
+    private void startHoved() {
+
+        Intent i = new Intent(getActivity(),Hovedaktivitet.class);
+        i.putExtra("username", userNameData);
+        i.putExtra("spiritanimal", spiritanimal);
+        startActivity(i);
+        startActivity(i); }
 }
 

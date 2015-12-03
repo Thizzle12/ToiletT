@@ -10,6 +10,7 @@ public class Post {
     private String location;
     private String user;
     private int likes;
+    private int spiritanimal;
 
 
 
@@ -17,15 +18,24 @@ public class Post {
         this.post = post;
     }
 
-    public Post(String post, String location, String user, int likes) {
+    public Post(String post, String location, String user, int likes, int spiritanimal) {
         this.post = post;
         this.location = location;
         this.user = user;
         this.likes = likes;
+        this.spiritanimal = spiritanimal;
     }
 
     public String getLocation() {
         return location;
+    }
+
+    public int getSpiritanimal() {
+        return spiritanimal;
+    }
+
+    public void setSpiritanimal(int spiritAnimal) {
+        this.spiritanimal = spiritAnimal;
     }
 
     public String getPost()
