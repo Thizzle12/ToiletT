@@ -103,7 +103,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
 
                 }
             });
-        finish();
+            finish();
         }
     }
 

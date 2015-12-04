@@ -3,7 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:tag = "MessageFragment">
+    android:tag = "MessageFragment"
+    android:background="@color/white">
 
     <ImageView
         android:layout_width="40dp"

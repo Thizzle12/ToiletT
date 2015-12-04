@@ -34,6 +34,14 @@ public class Hovedaktivitet extends AppCompatActivity
         userName = i.getExtras().getString("username");
         spiritanimal = i.getExtras().getInt("spiritanimal");
 
+        Bundle bundle=new Bundle();
+        bundle.putString("username", userName);
+        bundle.putInt("spiritanimal", spiritanimal);
+
+
+//        MyPage fragobj=new MyPage();
+//        fragobj.setArguments(bundle);
+
 
         setSupportActionBar(toolbar);
 
@@ -64,6 +72,7 @@ public class Hovedaktivitet extends AppCompatActivity
 
         viewPager = (ViewPager) findViewById(R.id.VP);
         PagerAdapter pageAdapter = new PagerAdapter(getSupportFragmentManager());
+
         viewPager.setAdapter(pageAdapter);
 
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
@@ -138,6 +147,8 @@ public class Hovedaktivitet extends AppCompatActivity
         in.putExtra("username",userName);
         in.putExtra("spiritanimal",spiritanimal);
         startActivity(in); }
+
+
 
 
 

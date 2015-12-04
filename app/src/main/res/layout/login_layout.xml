@@ -56,7 +56,7 @@
         <EditText
             android:inputType="textPassword"
 
-            android:layout_width="300dp"
+            android:layout_width="245dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:gravity="center"
@@ -71,27 +71,39 @@
             android:layout_width="245dp"
             android:layout_height="wrap_content"
             android:textSize="18dp"
-            tools:text="@string/login"
+            android:text="@string/login"
             android:id="@+id/login"
             android:layout_gravity="center_horizontal" />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Eller"
+            android:textStyle="italic"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            />
 
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="5dp">
 
             <Button
                 android:gravity="center"
                 android:background="@drawable/newbutton"
-                android:layout_width="fill_parent"
+                android:layout_width="245dp"
                 android:layout_height="wrap_content"
                 android:text="@string/create_user"
                 android:textColor="#000000"
                 android:textSize="18dp"
                 android:id="@+id/create_user"
                 android:textColorLink="#00ff00"
+                android:layout_centerHorizontal="true"
 
 
                 />

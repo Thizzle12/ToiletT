@@ -4,39 +4,12 @@
     <shared>
       <config />
     </shared>
-    <layouts>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/hovedaktivitet.xml">
-        <config>
-          <theme>@android:style/Theme.Material.Light</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/hovedaktivitet_activity_drawer.xml">
-        <config>
-          <theme>@android:style/Theme.Material.Light</theme>
-        </config>
-      </layout>
-    </layouts>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d5ec6e7-dece-43ee-a3cd-a7ce0b6d8f5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/imageedit_1_7528116911.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oie_transparent.png" />
-      <change type="DELETED" beforePath="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res\drawable\henrikprofil.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res\drawable\jacobprofil.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res\drawable\rasmusprofil.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res\drawable\theisprofil.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/hoved_venstremenu_top.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/hoved_venstremenu_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/hovedaktivitet_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/hovedaktivitet_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/newbutton.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/newbutton.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/venstremenu_bagrundsfarve.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/venstremenu_bagrundsfarve.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f3677947-c543-4fb0-af55-0663ea68e5cb" name="Default" comment="" />
     <ignored path="ToiletTreasure.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,139 +35,14 @@
     <favorites_list name="ToiletTreasure" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MessagesFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/MessagesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-              <folding>
-                <element signature="e#5446#5454#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/messages.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.379311">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message_fragment_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/message_fragment_layout.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="144" selection-start-line="67" selection-start-column="132" selection-end-line="67" selection-end-column="144" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/CreateUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37199125">
-              <caret line="45" column="101" selection-start-line="45" selection-start-column="101" selection-end-line="45" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hovedaktivitet_activity.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hovedaktivitet_activity.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.137931">
-              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hoved_venstremenu_top.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hoved_venstremenu_top.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.206898">
-              <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
-              <folding>
-                <element signature="e#1680#1695#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newbutton.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/newbutton.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
-        <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1337,7 +1185,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\Theis\Documents\GitHub\ToiletTreasure" value="4347195800196" />
+        <entry key="C:\Users\Henrik\Documents\GitHub\ToiletTreasure" value="4347681195219" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1665,36 +1513,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/tabfragment_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Post.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/CreateUser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Localization.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PostMessage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Login.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Hovedaktivitet.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/drawable2.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/transition/trans.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/draw.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Message.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/messages.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/MessagesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/venstremenu_bagrundsfarve.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/hovedaktivitet_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/hoved_venstremenu_top.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/newbutton.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PostMessage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/roundbutton.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/my_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/User.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/newbutton.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/create_user.xml" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -1703,10 +1530,10 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -1729,9 +1556,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1749,19 +1577,9 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ToiletTreasure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1777,30 +1595,15 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toilettreasure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="ToiletTreasure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1808,28 +1611,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="recentsLimit" value="5" />
-    <property name="android.project.structure.last.selected" value="app" />
-    <property name="android.project.structure.proportion" value="0.15" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0223770d210fe7d0" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="LGH815e680d84c" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3_2_HVGA_slider_ADP1_API_22" />
-    <property name="FullScreen" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res\drawable" />
-      <recent name="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res\transition" />
-      <recent name="C:\Users\Theis\Documents\GitHub\ToiletTreasure\app\src\main\res" />
-    </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -1844,7 +1637,8 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
@@ -1874,7 +1668,8 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
@@ -1966,11 +1761,12 @@
     <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="app" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1980,7 +1776,8 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
@@ -2014,525 +1811,96 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d5ec6e7-dece-43ee-a3cd-a7ce0b6d8f5b" name="Default" comment="" />
-      <created>1448979368816</created>
+      <changelist id="f3677947-c543-4fb0-af55-0663ea68e5cb" name="Default" comment="" />
+      <created>1449237865368</created>
       <option name="number" value="Default" />
-      <updated>1448979368816</updated>
+      <updated>1449237865368</updated>
     </task>
-    <task id="LOCAL-00001" summary="have changed the post and indicator">
-      <created>1449062647798</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1449062647798</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20396826" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22647528" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356077" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.028708134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.062200956" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.028708134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="have changed the post and indicator" />
-    <option name="LAST_COMMIT_MESSAGE" value="have changed the post and indicator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Post.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/messages.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#286#287#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#920#921#0" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#991#992#0" expanded="false" />
-            <element signature="e#1018#1019#0" expanded="false" />
-            <element signature="e#1058#1059#0" expanded="false" />
-            <element signature="e#1090#1091#0" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1186#1187#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/MessagesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding>
-            <element signature="e#5446#5454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state vertical-scroll-proportion="-2.9310346">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Localization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Listen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/LocationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/TopT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PostMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="61" selection-start-line="132" selection-start-column="61" selection-end-line="132" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="101" selection-start-line="45" selection-start-column="101" selection-end-line="45" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#286#287#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#920#921#0" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#991#992#0" expanded="false" />
-            <element signature="e#1018#1019#0" expanded="false" />
-            <element signature="e#1058#1059#0" expanded="false" />
-            <element signature="e#1090#1091#0" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1186#1187#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding>
-            <element signature="e#248#249#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#336#337#0" expanded="false" />
-            <element signature="e#376#377#0" expanded="false" />
-            <element signature="e#412#413#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#500#501#0" expanded="false" />
-            <element signature="e#548#549#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/MessagesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#5446#5454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Hovedaktivitet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/sattelit.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/poop.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/hovedaktivitet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/hovedaktivitet_activity_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/TopT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Listen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#286#287#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#920#921#0" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#991#992#0" expanded="false" />
-            <element signature="e#1018#1019#0" expanded="false" />
-            <element signature="e#1058#1059#0" expanded="false" />
-            <element signature="e#1090#1091#0" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1186#1187#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/LocationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Localization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PostMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="86" selection-start-line="87" selection-start-column="86" selection-end-line="87" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Hovedaktivitet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="24" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/transition/trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/message_fragment_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/messages.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.379311">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/MessagesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
-            <element signature="e#5446#5454#0" expanded="true" />
+            <element signature="e#2526#2689#0" expanded="true" />
+            <element signature="e#2688#2689#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="android-dummy://C:\Users\Theis\Documents\GitHub\ToiletTreasure/app/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18599562">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/PostMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/my_page.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/venstremenu_bagrundsfarve.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1487965">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hovedaktivitet_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.137931">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        <state vertical-scroll-proportion="-11.034483">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -2540,31 +1908,35 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hoved_venstremenu_top.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.103448">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+          <folding>
+            <element signature="e#2540#2555#0" expanded="true" />
+            <element signature="e#3511#3532#0" expanded="true" />
+            <element signature="e#3990#4015#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/newbutton.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_layout.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/create_user.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.206898">
-          <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.73779386">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding>
-            <element signature="e#1680#1695#0" expanded="true" />
+            <element signature="e#561#579#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2572,26 +1944,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/Login.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/roundbutton.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="144" selection-start-line="67" selection-start-column="132" selection-end-line="67" selection-end-column="144" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/User.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/reskesen/toilettreasure/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37199125">
-          <caret line="45" column="101" selection-start-line="45" selection-start-column="101" selection-end-line="45" selection-end-column="101" />
+        <state vertical-scroll-proportion="0.058419243">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
