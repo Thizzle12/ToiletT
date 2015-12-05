@@ -3,6 +3,7 @@ package com.example.reskesen.toilettreasure;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.ViewPager;
@@ -45,16 +46,8 @@ public class Hovedaktivitet extends AppCompatActivity
 
         setSupportActionBar(toolbar);
 
+        setVerion();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //      .setAction("Action", null).show();
-                startPost();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -107,12 +100,15 @@ public class Hovedaktivitet extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            /*
             Fragment currentFragment = getFragmentManager().findFragmentByTag("MessageFragment");
             FragmentTransaction fragTransaction = getFragmentManager().beginTransaction();
             fragTransaction.detach(currentFragment);
             fragTransaction.attach(currentFragment);
             fragTransaction.commit();
             return true;
+            */
+            startSettings();
         }
 
         return super.onOptionsItemSelected(item);
@@ -134,6 +130,12 @@ public class Hovedaktivitet extends AppCompatActivity
 
         } else if (id == R.id.close_t) {
 
+        }else if(id == R.id.logout){
+            Intent i = new Intent(this, StartActivity.class);
+            startActivity(i);
+            finish();
+
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -149,7 +151,22 @@ public class Hovedaktivitet extends AppCompatActivity
         startActivity(in); }
 
 
+public void setVerion(){
 
+    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setVisibility(View.VISIBLE);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                //      .setAction("Action", null).show();
+                startPost();
+            }
+        });
+    }
+}
 
 
 

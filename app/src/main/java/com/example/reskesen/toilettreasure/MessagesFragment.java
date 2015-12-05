@@ -5,12 +5,14 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
@@ -47,7 +49,7 @@ import com.firebase.client.ValueEventListener;
  */
 public class MessagesFragment extends android.support.v4.app.Fragment implements AdapterView.OnItemClickListener{
 
-
+    int postCount = 15;
     String strtext = null;
     Firebase firebase;
    // ArrayList<String> messages = new ArrayList<String>();
@@ -55,6 +57,7 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
     SwipeRefreshLayout swipe;
     ArrayList<Integer> spiritanimal = new ArrayList<>();
     ArrayList<Message> messages = new ArrayList<>();
+    ToiletTreasure app;
 
     @Nullable
     @Override
@@ -67,6 +70,7 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
         list.setOnItemClickListener(this);
         list.setDivider(new ColorDrawable(Color.rgb(0, 197, 0)));
         list.setDividerHeight(5);
+        app = (ToiletTreasure) getActivity().getApplication();
 
 
 
@@ -119,7 +123,9 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
                 //dataSnapshot.getChildren();
 
                 try {
-                    int countStart = (int) dataSnapshot.getChildrenCount() - 15;
+                    final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity().getBaseContext());
+                    postCount = Integer.parseInt(prefs.getString("postCount", "15"));
+                    int countStart = (int) dataSnapshot.getChildrenCount() - (postCount-1);
                     int countEnd = (int) dataSnapshot.getChildrenCount() + 1;
                     messages.clear();
                     for (int i = countStart; i < countEnd; i++) {
@@ -173,7 +179,7 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
 
 
 
-                            billede.setImageResource(getImage(messages.get(position).getSpiritanimal()));//R.drawable.smiley);
+                            billede.setImageResource(app.getImage(messages.get(position).getSpiritanimal()));//R.drawable.smiley);
 
                             return view;
                         }
@@ -197,30 +203,9 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
 
     }
 
-    private int getImage(int position) {
-        try {
-            switch (position) {
-                case 1:
-                    return R.drawable.bear;
-
-                case 2:
-                    return R.drawable.octopus;
-
-                case 3:
-                    return R.drawable.beaver;
-
-                default:
-                    return R.drawable.crab;
 
 
-            }
-        } catch (Exception e) {
-            System.out.println("Der skete en fejl");
-            e.printStackTrace();
-            return R.drawable.cancel;
-        }
 
-    }
 
 
 }

@@ -28,20 +28,28 @@ public class PagerAdapter extends FragmentPagerAdapter implements PagerSlidingTa
     }
 
     public Fragment getItem(int position){
+
         switch (position){
             case 0:
                 return new MessagesFragment();
             case 1:
+
+
                 Bundle bundle=new Bundle();
                 bundle.putString("username", userName);
                 bundle.putInt("spiritanimal", spiritanimal);
-
-
                 MyPage fragobj=new MyPage();
                 fragobj.setArguments(bundle);
                 return fragobj;
             case 2:
-                return new CloseT();
+                Bundle bundle2=new Bundle();
+                bundle2.putString("username", userName);
+                bundle2.putInt("spiritanimal", spiritanimal);
+
+                CloseT posting = new CloseT();
+                posting.setArguments(bundle2);
+
+                return posting;
             default:
                 return null;
 

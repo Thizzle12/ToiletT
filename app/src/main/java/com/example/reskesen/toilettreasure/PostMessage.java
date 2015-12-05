@@ -8,6 +8,7 @@ import android.location.Criteria;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.*;
 import android.view.LayoutInflater;
@@ -38,7 +39,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
     EditText message;
     Firebase firebase;
     LocationManager locationManager;
-    String location = "";
+    String location;
     String username;
     int spiritanimal;
 
@@ -54,6 +55,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
         spiritanimal = i.getExtras().getInt("spiritanimal");
         post = (Button) findViewById(R.id.post);
         message = (EditText) findViewById(R.id.message);
+        location = "unknown";
 
         firebase = new Firebase("https://vivid-inferno-5770.firebaseio.com/");
         System.out.println("Jeg har oprettet firebaseforbindelse");
@@ -86,6 +88,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
                         Firebase ref2 = firebase.child("Posts").child("" + count);
 
                         Post post = new Post(text, location, username, 0, spiritanimal);
+
                         ref2.setValue(post);
 
                         ref.setValue(count);
@@ -111,38 +114,82 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
     protected void onResume() {
         super.onResume();
 
-        Criteria kriterium = new Criteria();
-        kriterium.setAccuracy(Criteria.ACCURACY_FINE);
-        String udbyder = locationManager.getBestProvider(kriterium, true); // giver "gps" hvis den er slået til
-
-
-
-        if (udbyder == null) {
-            //  textView.append("\n\nError! You haven't turned on any kind oflocalization providers. Turn on GPS or network-based localization and try again.");
-            startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
-            return;
-        }
-
+        final Geocoder geocoder = new Geocoder(this);
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
 
-        Location sted = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        new AsyncTask() {
+            @Override
+            protected Object doInBackground(Object... arg0) {
+                try {
 
-        if (sted != null) {
-            try {
-                Geocoder geocoder = new Geocoder(this);
-                List<Address> adresser = geocoder.getFromLocation(sted.getLatitude(), sted.getLongitude(), 1);
-                if (adresser != null && adresser.size() > 0) {
-                    Address adresse = adresser.get(0);
-                    location = adresse.getLocality();
-                    System.out.println("location " + location);
-                    //   textView.append("Current location: \n" + adresse.getLocality() + "\n\n");
+
+                    Criteria kriterium = new Criteria();
+                    kriterium.setAccuracy(Criteria.ACCURACY_FINE);
+                    String udbyder = locationManager.getBestProvider(kriterium, true); // giver "gps" hvis den er slået til
+
+
+
+                    if (udbyder == null) {
+                        //  textView.append("\n\nError! You haven't turned on any kind oflocalization providers. Turn on GPS or network-based localization and try again.");
+                        startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                    }
+/*
+                    Location sted;
+                    while(true){
+                        sted = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+                        if(sted != null){
+                            break;
+                        }
+
+                    }
+                    */
+                    Location sted = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+                    //System.out.println(sted.toString());
+
+                    if (sted != null) {
+                        try {
+
+                            List<Address> adresser = geocoder.getFromLocation(sted.getLatitude(), sted.getLongitude(), 1);
+
+                            System.out.println(adresser.toString());
+
+                            return adresser;
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    return e;
                 }
-            } catch (IOException ex) {
-                ex.printStackTrace();
+                return null;
             }
-        }else{
-            location = "unknown";
-        }
+
+            @Override
+            protected void onPostExecute(Object adresser2) {
+
+                if(adresser2 == null){
+                    location = "unknown";
+                }else {
+                    System.out.println("adresser er IKKE lig med null");
+                    List<Address> adresser = (List<Address>) adresser2;
+                    if (adresser != null && adresser.size() > 0) {
+                        Address adresse = adresser.get(0);
+                        location = "Location: " + adresse.getLocality();
+                        System.out.println("location " + location);
+                        //   textView.append("Current location: \n" + adresse.getLocality() + "\n\n");
+                    }
+                }
+
+            }
+        }.execute();
+
+
+
+
     }
 
     @Override
@@ -155,7 +202,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
 
     @Override
     public void onLocationChanged(Location location) {
-
+        System.out.println("location changed");
     }
 
     @Override

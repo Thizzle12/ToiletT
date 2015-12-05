@@ -23,15 +23,22 @@
     <CheckBoxPreference
         android:key="Vibrations"
         android:title="Vibrations"
-        android:summary="Allow for thr app to vibrate your phone"
+        android:summary="Allow for the app to vibrate your phone"
         android:defaultValue="true" />
 
     <CheckBoxPreference
         android:key="Notifications"
         android:title="Notifications"
-        android:summary="Allow for notifications from the app"
+        android:summary="Allow for the app to send notifications"
         android:defaultValue="true" />
+
+    <ListPreference
+        android:key="postCount"
+        android:title="Amount of loaded posts"
+        android:summary="Set the amount of post that the feed will show"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalues" />
 
     <!--       android:password="true" -->
 
-    </PreferenceScreen>
+</PreferenceScreen>

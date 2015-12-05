@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
+        android:name=".ToiletTreasure"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +16,8 @@
         <activity
             android:name=".Hovedaktivitet"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            >
         </activity>
         <activity
             android:name="com.example.reskesen.toilettreasure.Settings"
@@ -26,9 +28,15 @@
             android:label="PostMessage" >
         </activity>
         <activity
+            android:name=".SelectSpiritAnimal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
 
             android:name=".StartActivity"
             android:label="@string/app_name"
+
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -55,38 +55,36 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
             Firebase ref = firebase.child("Users");
             ref.addValueEventListener(new ValueEventListener() {
-                                          @Override
-                                          public void onDataChange(DataSnapshot dataSnapshot) {
-                                              //dataSnapshot.getChildren();
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    //dataSnapshot.getChildren();
 
-                                                  try {
-                                                      String response = dataSnapshot.child(username.getText().toString()).child("password").getValue().toString();
-                                                      System.out.println("username: " + username.getText().toString() + " password: " + response);
+                    try {
+                        String response = dataSnapshot.child(username.getText().toString()).child("password").getValue().toString();
+                        System.out.println("username: " + username.getText().toString() + " password: " + response);
 
-                                                        if(response.equals(password.getText().toString())){
-                                                            userNameData = username.getText().toString();
-                                                            spiritanimal = Integer.parseInt(dataSnapshot.child(userNameData).child("spiritanimal").getValue().toString());
-                                                            startHoved();
+                        if (response.equals(password.getText().toString())) {
+                            userNameData = username.getText().toString();
+                            spiritanimal = Integer.parseInt(dataSnapshot.child(userNameData).child("spiritanimal").getValue().toString());
+                            startHoved();
 
-                                                        } else{
-                                                            throw new Exception("invalid password");
-                                                        }
-
-
-                                                  } catch (Exception e) {
-                                                      password.setText("");
-                                                      Toast.makeText(getActivity(), "Invalid Username or Password!", Toast.LENGTH_SHORT).show();
-                                                  }
-                                              }
+                        } else {
+                            throw new Exception("invalid password");
+                        }
 
 
+                    } catch (Exception e) {
+                        password.setText("");
+                        Toast.makeText(getActivity(), "Invalid Username or Password!", Toast.LENGTH_SHORT).show();
+                    }
+                }
 
-                                          @Override
-                                          public void onCancelled(FirebaseError firebaseError) {
 
-                                          }
-                                      });
+                @Override
+                public void onCancelled(FirebaseError firebaseError) {
 
+                }
+            });
 
 
         } else if(v == createUser){
@@ -104,7 +102,7 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
         Intent i = new Intent(getActivity(),Hovedaktivitet.class);
         i.putExtra("username", userNameData);
         i.putExtra("spiritanimal", spiritanimal);
-        startActivity(i);
+
         startActivity(i); }
 }
 

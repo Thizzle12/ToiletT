@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listentries">
+        <item>5 posts</item>
+        <item>10 posts</item>
+        <item>15 posts (default)</item>
+        <item>20 posts</item>
+        <item>30 posts</item>
+        <item>50 posts</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+</resources>

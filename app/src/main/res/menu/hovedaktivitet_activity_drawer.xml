@@ -17,6 +17,8 @@
         <menu>
             <item android:id="@+id/inst" android:icon="@android:drawable/ic_menu_manage"
                 android:title="Indstillinger" />
+            <item android:id="@+id/logout" android:icon="@drawable/shutdown"
+            android:title="Log ud"/>
         </menu>
     </item>
 

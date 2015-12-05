@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.reskesen.toilettreasure.R;import com.example.reskesen.toilettreasure.User;import com.firebase.client.Firebase;
@@ -15,7 +16,7 @@ import com.example.reskesen.toilettreasure.R;import com.example.reskesen.toilett
  */
 public class CreateUser extends android.support.v4.app.Fragment implements View.OnClickListener {
 
-    Button confirm;
+    ImageButton confirm;
     EditText username, password1, confirm_password1;
     Firebase firebase;
 
@@ -24,7 +25,7 @@ public class CreateUser extends android.support.v4.app.Fragment implements View.
 
         Firebase.setAndroidContext(getActivity());
 
-        confirm = (Button) root.findViewById(R.id.confirm);
+        confirm = (ImageButton) root.findViewById(R.id.confirm);
         username = (EditText) root.findViewById(R.id.username);
         password1 = (EditText) root.findViewById(R.id.password1);
         confirm_password1 = (EditText) root.findViewById(R.id.confirm_password1);

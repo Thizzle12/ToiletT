@@ -10,21 +10,7 @@ public class User {
     private String fullName;
     private int spiritanimal;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public int getSpiritanimal() {
-        return spiritanimal;
-    }
-
-    public void setSpiritanimal(int spititanimal) {
-        this.spiritanimal = spititanimal;
-    }
 
     public User(String fullName, String password, int spiritanimal) {
         this.fullName = fullName;
@@ -47,7 +33,21 @@ public class User {
     }
 
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public int getSpiritanimal() {
+        return spiritanimal;
+    }
+
+    public void setSpiritanimal(int spititanimal) {
+        this.spiritanimal = spititanimal;
+    }
 
 }
 

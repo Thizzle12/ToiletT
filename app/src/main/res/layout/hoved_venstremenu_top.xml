@@ -18,6 +18,6 @@
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:text="The new way of socialise" android:id="@+id/textView" />
+        android:text="The new way to socialize" android:id="@+id/textView" />
 
 </LinearLayout>
