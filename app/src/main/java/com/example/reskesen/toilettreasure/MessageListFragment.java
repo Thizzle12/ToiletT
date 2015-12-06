@@ -1,15 +1,8 @@
 package com.example.reskesen.toilettreasure;
 
-import android.app.Fragment;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -18,20 +11,13 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Animation;
-import android.view.animation.OvershootInterpolator;
-import android.view.animation.TranslateAnimation;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.reskesen.toilettreasure.R;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -40,22 +26,16 @@ import com.firebase.client.ValueEventListener;
 import java.lang.Override;import java.lang.String;import java.lang.System;
 import java.util.ArrayList;
 
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-
 /**
  * Created by Theis on 12-10-2015.
  */
-public class MessagesFragment extends android.support.v4.app.Fragment implements AdapterView.OnItemClickListener{
+public class MessageListFragment extends android.support.v4.app.Fragment implements AdapterView.OnItemClickListener{
 
     int postCount = 15;
-    String strtext = null;
     Firebase firebase;
-   // ArrayList<String> messages = new ArrayList<String>();
+   // ArrayList<String> message = new ArrayList<String>();
     ListView list;
     SwipeRefreshLayout swipe;
-    ArrayList<Integer> spiritanimal = new ArrayList<>();
     ArrayList<Message> messages = new ArrayList<>();
     ToiletTreasure app;
 
@@ -63,9 +43,9 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.message_fragment_layout, container, false);
+        View root = inflater.inflate(R.layout.message_list, container, false);
         swipe = (SwipeRefreshLayout) root.findViewById(R.id.refresh);
-        // super.onCreate(savedInstanceState);
+
         list = (ListView) root.findViewById(R.id.list);
         list.setOnItemClickListener(this);
         list.setDivider(new ColorDrawable(Color.rgb(0, 197, 0)));
@@ -115,7 +95,7 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
         firebase = new Firebase("https://vivid-inferno-5770.firebaseio.com/");
 
         //String strtext = getArguments().getString("edttext");
-        //return inflater.inflate(R.layout.messages, container, false);
+        //return inflater.inflate(R.layout.message, container, false);
         final Firebase ref = firebase.child("Posts");
         ref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -132,16 +112,16 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
                         try {
 
 
-                            strtext = dataSnapshot.child("" + i).child("post").getValue().toString();
+                            String text = dataSnapshot.child("" + i).child("post").getValue().toString();
                             int spirit = Integer.parseInt(dataSnapshot.child("" + i).child("spiritanimal").getValue().toString());
                             String username = dataSnapshot.child("" + i).child("user").getValue().toString();
                             String location = dataSnapshot.child("" + i).child("location").getValue().toString();
                             int likes = Integer.parseInt(dataSnapshot.child("" + i).child("likes").getValue().toString());
 
-                            Message message = new Message(spirit, strtext, username, location, likes);
+                            Message message = new Message(spirit,  text, username, location, likes);
 
                             messages.add(message);
-                            //messages.add(strtext);
+                            //message.add(strtext);
                         } catch (NullPointerException e) {
                             System.out.println("i: " + i);
                             System.out.println("MessageSize  " + messages.size());
@@ -165,17 +145,20 @@ public class MessagesFragment extends android.support.v4.app.Fragment implements
 
                     }
 
-                    ArrayAdapter adapter = new ArrayAdapter(getActivity(), R.layout.messages, R.id.message_text, textMessages.toArray()) {
+                    ArrayAdapter adapter = new ArrayAdapter(getActivity(), R.layout.message, R.id.message_text, textMessages.toArray()) {
                         @Override
                         public View getView(int position, View cachedView, ViewGroup parent) {
                             View view = super.getView(position, cachedView, parent);
 
                             TextView username = (TextView) view.findViewById(R.id.user_name);
-                            username.setText( messages.get(position).getUsername());
+                            username.setText(messages.get(position).getUsername());
                             ImageView billede = (ImageView) view.findViewById(R.id.message_image);
 
                             TextView text = (TextView) view.findViewById(R.id.message_text);
                             text.setText(messages.get(position).getMessage());
+
+                            TextView location = (TextView) view.findViewById(R.id.location);
+                            location.setText(messages.get(position).getLocation());
 
 
 

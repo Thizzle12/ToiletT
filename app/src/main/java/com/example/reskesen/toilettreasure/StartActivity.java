@@ -10,7 +10,7 @@ public class StartActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.start_activity);
         Display display = getWindowManager().getDefaultDisplay();
         int height = display.getHeight();
         Bundle arg = new Bundle();
@@ -21,7 +21,7 @@ public class StartActivity extends FragmentActivity {
             android.support.v4.app.Fragment fragment = new Login();
             fragment.setArguments(arg);
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.hovedlayout, fragment) // tom container i layout
+                    .add(R.id.startlayout, fragment) // tom container i layout
                     .commit();
         }
 

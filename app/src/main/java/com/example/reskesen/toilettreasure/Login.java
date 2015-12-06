@@ -7,10 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.reskesen.toilettreasure.CreateUser;import com.example.reskesen.toilettreasure.Hovedaktivitet;import com.example.reskesen.toilettreasure.R;import com.firebase.client.DataSnapshot;
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
@@ -21,7 +20,7 @@ import java.lang.Exception;import java.lang.Override;import java.lang.String;imp
  * Created by Theis on 03-10-2015.
  */
 public class Login extends android.support.v4.app.Fragment implements View.OnClickListener{
-    ImageView img;
+
     EditText username, password;
     Button login, createUser;
     Firebase firebase;
@@ -48,16 +47,14 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
     @Override
     public void onClick(View v) {
-        //Bundle arg = getArguments();
-        //hovedaktivitet = new Hovedaktivitet();
-        //hovedaktivitet.setArguments(arg);
+
         if(v == login){
 
             Firebase ref = firebase.child("Users");
             ref.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    //dataSnapshot.getChildren();
+
 
                     try {
                         String response = dataSnapshot.child(username.getText().toString()).child("password").getValue().toString();
@@ -89,7 +86,7 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
         } else if(v == createUser){
             getFragmentManager().beginTransaction()
-                    .replace(R.id.hovedlayout, new CreateUser())
+                    .replace(R.id.startlayout, new CreateUser())
                     .addToBackStack(null)
                     .commit();
 
@@ -99,7 +96,7 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
     private void startHoved() {
 
-        Intent i = new Intent(getActivity(),Hovedaktivitet.class);
+        Intent i = new Intent(getActivity(),MainActivity.class);
         i.putExtra("username", userNameData);
         i.putExtra("spiritanimal", spiritanimal);
 

@@ -11,13 +11,13 @@
         android:src="@mipmap/logo2" android:id="@+id/imageView" />
 
     <TextView android:layout_width="100dp" android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing" android:text="Toilet Treasure"
+        android:paddingTop="@dimen/nav_header_vertical_spacing" android:text="@string/logo_name"
         android:textColor="#000000"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         />
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:text="The new way to socialize" android:id="@+id/textView" />
+        android:text="@string/catchphrase" android:id="@+id/textView" />
 
 </LinearLayout>

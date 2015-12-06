@@ -14,7 +14,7 @@ import com.example.reskesen.toilettreasure.R;import com.example.reskesen.toilett
 /**
  * Created by Henrik on 12/11/2015.
  */
-public class ForsideFragment extends Fragment implements View.OnClickListener {
+public class ContainerClass extends Fragment implements View.OnClickListener {
 
 
     @Override

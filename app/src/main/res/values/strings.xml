@@ -9,13 +9,30 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="email">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="Username">Username</string>
     <string name="Confirm_password">Confrim Password</string>
-    <string name="create_user">Opret bruger</string>
-    <string name="forgot_password">Har du glemt dit password eller dit brugernavn?</string>
+    <string name="create_user">Create User</string>
     <string name="profile">Profile</string>
-    <string name="logo_name">ToiletTreasuer</string>
+    <string name="logo_name">ToiletTreasure</string>
+    <string name="confirm">Confirm</string>
+    <string name="catchphrase">The New Way To Socialize</string>
+    <string name="or">Or</string>
+    <string name="share_hint">share your thoughts</string>
+    <string name="postButtonText">Post</string>
+    <string name="change_animal">Press to change spiritanimal</string>
+    <string name="yourusername">Your Username:</string>
+    <string name="yourspirit">Your Spiritanimal:</string>
+    <string name="change_pass">Change Password</string>
+    <string name="top_posts">Top Posts</string>
+    <string name="new_posts">New Posts</string>
+    <string name="my_posts">My Posts</string>
+    <string name="closest_posts">Closest Posts</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+
+
+
+
 </resources>

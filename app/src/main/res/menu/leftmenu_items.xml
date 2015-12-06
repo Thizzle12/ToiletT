@@ -3,22 +3,22 @@
 
     <group android:checkableBehavior="single">
         <item android:id="@+id/my_t" android:icon="@android:drawable/ic_menu_upload"
-            android:title="Mine Tanker" />
+            android:title="@string/my_posts" />
         <item android:id="@+id/top_t" android:icon="@android:drawable/ic_menu_add"
-            android:title="Top Tanker" />
+            android:title="@string/top_posts" />
         <item android:id="@+id/new_t" android:icon="@android:drawable/ic_popup_reminder"
-            android:title="Nyest Tanker" />
+            android:title="@string/new_posts" />
         <item android:id="@+id/close_t" android:icon="@android:drawable/ic_menu_mylocation"
-            android:title="Tætteste Tanker"/>
+            android:title="@string/closest_posts"/>
 
     </group>
 
     <item android:title="Andet">
         <menu>
             <item android:id="@+id/inst" android:icon="@android:drawable/ic_menu_manage"
-                android:title="Indstillinger" />
+                android:title="@string/settings" />
             <item android:id="@+id/logout" android:icon="@drawable/shutdown"
-            android:title="Log ud"/>
+            android:title="@string/logout"/>
         </menu>
     </item>
 

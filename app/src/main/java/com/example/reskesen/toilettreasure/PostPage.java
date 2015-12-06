@@ -5,15 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-
-import com.example.reskesen.toilettreasure.R;import com.example.reskesen.toilettreasure.R;
 
 /**
  * Created by Henrik on 19/11/2015.
  */
-public class CloseT extends android.support.v4.app.Fragment implements View.OnClickListener{
+public class PostPage extends android.support.v4.app.Fragment implements View.OnClickListener{
 
 
         String userName;
@@ -22,7 +19,7 @@ public class CloseT extends android.support.v4.app.Fragment implements View.OnCl
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.forside_fragmenter, container, false);
+        View root = inflater.inflate(R.layout.post_page, container, false);
         //   TextView textView = (TextView) rootView.findViewById(R.id.section_label);
         //   textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
         postMessage = (ImageButton) root.findViewById(R.id.posting);

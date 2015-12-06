@@ -1,7 +1,6 @@
 package com.example.reskesen.toilettreasure;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,11 +12,11 @@ import android.widget.TextView;
 /**
  * Created by Henrik on 03/12/2015.
  */
-public class MyPage extends android.support.v4.app.Fragment implements View.OnClickListener{
+public class ProfilePage extends android.support.v4.app.Fragment implements View.OnClickListener{
 
-    int spiAnim;
-    String proName;
-    String username;
+
+    String userName;
+
 
     TextView profilName;
     ImageButton spiritAnim;
@@ -25,7 +24,7 @@ public class MyPage extends android.support.v4.app.Fragment implements View.OnCl
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.my_page, container, false);
+        View root = inflater.inflate(R.layout.profile_page, container, false);
 
         spiritAnim = (ImageButton) root.findViewById(R.id.spiritAnim);
 
@@ -33,13 +32,12 @@ public class MyPage extends android.support.v4.app.Fragment implements View.OnCl
 
         profilName = (TextView) root.findViewById(R.id.profilName);
 
-      // String proName = getArguments().getString("username");
-     //   int spiAnim = getArguments().getInt("spiritanimal");
+
 
         Intent i= getActivity().getIntent();
-        proName = i.getExtras().getString("username");
+        userName = i.getExtras().getString("username");
         int spiAnim = i.getExtras().getInt("spiritanimal");
-        profilName.setText(proName);
+        profilName.setText(userName);
 
 
 
@@ -101,7 +99,7 @@ public class MyPage extends android.support.v4.app.Fragment implements View.OnCl
     public void onClick(View v) {
         if(v == spiritAnim){
             Intent in = new Intent(getActivity(),SelectSpiritAnimal.class);
-            in.putExtra("profilename", proName);
+            in.putExtra("profilename", userName);
             startActivity(in);
         }
 

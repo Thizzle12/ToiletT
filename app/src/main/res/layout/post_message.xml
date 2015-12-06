@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:hint="share your thoughts"
+        android:hint="@string/share_hint"
         android:textColorHint="#000000"
         android:id="@+id/message"
         android:layout_gravity="center_horizontal" />
@@ -17,7 +17,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Post"
+        android:text="@string/postButtonText"
         android:id="@+id/post"
         android:layout_gravity="center_horizontal" />
 

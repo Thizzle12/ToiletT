@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        tools:src="@drawable/smiley"
+        tools:src="@drawable/penguin"
         android:id="@+id/message_image"
         />
     <TextView
@@ -29,6 +29,14 @@
         android:textSize="15dp"
         android:layout_below="@+id/message_image"
         android:id="@+id/message_text"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:text="Location: Miami"
+        android:textSize="12dp"
+        android:layout_below="@+id/message_text"
+        android:id="@+id/location"/>
 
 
 </RelativeLayout>

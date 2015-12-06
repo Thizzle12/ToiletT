@@ -27,10 +27,8 @@ public class ToiletTreasure extends Application {
                     return R.drawable.bird;
                 case 1:
                     return R.drawable.bear;
-
                 case 2:
                     return R.drawable.beaver;
-
                 case 3:
                     return R.drawable.penguin;
                 case 4:
@@ -47,10 +45,6 @@ public class ToiletTreasure extends Application {
                     return R.drawable.falcon;
                 case 10:
                     return R.drawable.snail;
-
-
-
-
                 default:
                     return R.drawable.wolf;
 

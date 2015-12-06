@@ -45,7 +45,7 @@
         android:layout_width="100dp"
         android:background="@drawable/roundbutton"
         android:layout_height="100dp"
-        android:text="Confirm"
+        android:text="@string/confirm"
         android:id="@+id/confirm"
         android:src="@drawable/success"
         android:layout_gravity="center_horizontal" />

@@ -5,7 +5,7 @@
     tools:context=".StartActivity">
 
     <FrameLayout
-        android:id="@+id/hovedlayout"
+        android:id="@+id/startlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">

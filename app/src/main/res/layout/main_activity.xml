@@ -27,7 +27,7 @@
 
         <RelativeLayout
 
-            android:id="@+id/hovedakti_indhold"
+            android:id="@+id/mainactivity_container"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
@@ -54,7 +54,7 @@
 
         </RelativeLayout>
         <!--
-        <include layout="@layout/forside_fragmenter" />
+        <include layout="@layout/post_page" />
         -->
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -70,8 +70,8 @@
     <android.support.design.widget.NavigationView android:id="@+id/nav_view"
         android:layout_width="wrap_content" android:layout_height="match_parent"
         android:layout_gravity="start" android:fitsSystemWindows="true"
-        app:headerLayout="@layout/hoved_venstremenu_top"
-        app:menu="@menu/hovedaktivitet_activity_drawer"
+        app:headerLayout="@layout/leftmenu_top"
+        app:menu="@menu/leftmenu_items"
         android:background="#808080"
         app:itemTextColor="@color/white"/>
 

@@ -1,7 +1,5 @@
 package com.example.reskesen.toilettreasure;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,7 +17,7 @@ import android.view.MenuItem;
 
 import com.astuetz.PagerSlidingTabStrip;
 
-public class Hovedaktivitet extends AppCompatActivity
+public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ViewPager viewPager;
@@ -29,7 +27,7 @@ public class Hovedaktivitet extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hovedaktivitet_activity);
+        setContentView(R.layout.main_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         Intent i = getIntent();
         userName = i.getExtras().getString("username");
@@ -40,7 +38,7 @@ public class Hovedaktivitet extends AppCompatActivity
         bundle.putInt("spiritanimal", spiritanimal);
 
 
-//        MyPage fragobj=new MyPage();
+//        ProfilePage fragobj=new ProfilePage();
 //        fragobj.setArguments(bundle);
 
 
@@ -60,7 +58,7 @@ public class Hovedaktivitet extends AppCompatActivity
 
         if (savedInstanceState==null){
             getSupportFragmentManager().beginTransaction().add(
-                    R.id.hovedakti_indhold, new  ForsideFragment()).commit();
+                    R.id.mainactivity_container, new ContainerClass()).commit();
         }
 
         viewPager = (ViewPager) findViewById(R.id.VP);
@@ -87,27 +85,18 @@ public class Hovedaktivitet extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.hovedaktivitet, menu);
+        getMenuInflater().inflate(R.menu.main_activity_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+
         if (id == R.id.action_settings) {
-            /*
-            Fragment currentFragment = getFragmentManager().findFragmentByTag("MessageFragment");
-            FragmentTransaction fragTransaction = getFragmentManager().beginTransaction();
-            fragTransaction.detach(currentFragment);
-            fragTransaction.attach(currentFragment);
-            fragTransaction.commit();
-            return true;
-            */
+
             startSettings();
         }
 
@@ -117,11 +106,11 @@ public class Hovedaktivitet extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.my_t) {
-            // Handle the camera action
+
 
         } else if (id == R.id.new_t) {
 
@@ -160,8 +149,7 @@ public void setVerion(){
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //      .setAction("Action", null).show();
+
                 startPost();
             }
         });
