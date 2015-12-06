@@ -55,7 +55,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
         spiritanimal = i.getExtras().getInt("spiritanimal");
         post = (Button) findViewById(R.id.post);
         message = (EditText) findViewById(R.id.message);
-        location = "unknown";
+        location = "Location: unknown";
 
         firebase = new Firebase("https://vivid-inferno-5770.firebaseio.com/");
         System.out.println("Jeg har oprettet firebaseforbindelse");
@@ -172,7 +172,7 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
             protected void onPostExecute(Object adresser2) {
 
                 if(adresser2 == null){
-                    location = "unknown";
+                    location = "Location: unknown";
                 }else {
                     System.out.println("adresser er IKKE lig med null");
                     List<Address> adresser = (List<Address>) adresser2;

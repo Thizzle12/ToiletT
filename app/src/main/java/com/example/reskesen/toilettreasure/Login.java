@@ -99,7 +99,6 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
         Intent i = new Intent(getActivity(),MainActivity.class);
         i.putExtra("username", userNameData);
         i.putExtra("spiritanimal", spiritanimal);
-
         startActivity(i); }
 }
 

@@ -41,7 +41,7 @@ public class CreateUser extends android.support.v4.app.Fragment implements View.
         if(v == confirm){
 
             if(!username.getText().toString().equals("") && password.getText().toString().equals(confirm_password.getText().toString())){
-
+            try {
                 Firebase ref = firebase.child("Users").child(username.getText().toString());
                 User user = new User(username.getText().toString(), password.getText().toString(), 1);
                 ref.setValue(user);
@@ -50,7 +50,10 @@ public class CreateUser extends android.support.v4.app.Fragment implements View.
                         .replace(R.id.startlayout, new Login())
                         .addToBackStack(null)
                         .commit();
-
+            }catch (Exception e){
+                e.printStackTrace();
+                Toast.makeText(getActivity(), "Your username is invalid", Toast.LENGTH_SHORT).show();
+            }
 
             }else{
                 password.setText("");

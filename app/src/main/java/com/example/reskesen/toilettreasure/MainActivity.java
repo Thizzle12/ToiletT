@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
         }else if(id == R.id.logout){
             Intent i = new Intent(this, StartActivity.class);
             startActivity(i);
-            finish();
+            this.finish();
 
 
         }
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity
 
 public void setVerion(){
 
-    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+    if (android.os.Build.VERSION.SDK_INT >= 15) {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setVisibility(View.VISIBLE);
 
@@ -153,7 +153,7 @@ public void setVerion(){
                 startPost();
             }
         });
-    }
+   }
 }
 
 

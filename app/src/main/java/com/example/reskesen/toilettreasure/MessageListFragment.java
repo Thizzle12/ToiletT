@@ -110,8 +110,6 @@ public class MessageListFragment extends android.support.v4.app.Fragment impleme
                     messages.clear();
                     for (int i = countStart; i < countEnd; i++) {
                         try {
-
-
                             String text = dataSnapshot.child("" + i).child("post").getValue().toString();
                             int spirit = Integer.parseInt(dataSnapshot.child("" + i).child("spiritanimal").getValue().toString());
                             String username = dataSnapshot.child("" + i).child("user").getValue().toString();

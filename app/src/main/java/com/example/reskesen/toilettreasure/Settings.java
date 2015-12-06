@@ -13,4 +13,9 @@ public class Settings extends PreferenceActivity {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.layout.settings);
     }
+
+    protected void onPause(){
+        super.onPause();
+        finish();
+    }
 }
