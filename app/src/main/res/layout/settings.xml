@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent" android:layout_width="match_parent">
 
     <CheckBoxPreference
-        android:key="Localization"
+        android:key="localization"
         android:title="Localization"
         android:summary="Allow for the use of localization to determine your current position"
         android:defaultValue="true" />

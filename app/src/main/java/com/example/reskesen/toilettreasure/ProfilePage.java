@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -20,6 +22,7 @@ public class ProfilePage extends android.support.v4.app.Fragment implements View
 
     TextView profilName;
     ImageButton spiritAnim;
+    Button changePassword;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,14 +34,14 @@ public class ProfilePage extends android.support.v4.app.Fragment implements View
        spiritAnim.setOnClickListener(this);
 
         profilName = (TextView) root.findViewById(R.id.profilName);
-
+        changePassword = (Button) root.findViewById(R.id.changePassword);
 
 
         Intent i= getActivity().getIntent();
         userName = i.getExtras().getString("username");
         int spiAnim = i.getExtras().getInt("spiritanimal");
         profilName.setText(userName);
-
+        changePassword.setOnClickListener(this);
 
 
         try {
@@ -101,6 +104,8 @@ public class ProfilePage extends android.support.v4.app.Fragment implements View
             Intent in = new Intent(getActivity(),SelectSpiritAnimal.class);
             in.putExtra("profilename", userName);
             startActivity(in);
+        }else if(v == changePassword){
+            Toast.makeText(getActivity(), "Under construction", Toast.LENGTH_SHORT).show();
         }
 
 

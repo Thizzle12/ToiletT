@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 
@@ -110,21 +111,24 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.my_t) {
+            Toast.makeText(this, "Under construction", Toast.LENGTH_SHORT).show();
 
 
         } else if (id == R.id.new_t) {
+            Toast.makeText(this, "Under construction", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.inst) {
             startSettings();
 
         } else if (id == R.id.close_t) {
+            Toast.makeText(this, "Under construction", Toast.LENGTH_SHORT).show();
 
+        }else if(id == R.id.top_t) {
+            Toast.makeText(this, "Under construction", Toast.LENGTH_SHORT).show();
         }else if(id == R.id.logout){
             Intent i = new Intent(this, StartActivity.class);
             startActivity(i);
             this.finish();
-
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

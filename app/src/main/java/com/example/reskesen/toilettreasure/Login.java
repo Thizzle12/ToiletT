@@ -1,5 +1,6 @@
 package com.example.reskesen.toilettreasure;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -64,6 +65,8 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
                             userNameData = username.getText().toString();
                             spiritanimal = Integer.parseInt(dataSnapshot.child(userNameData).child("spiritanimal").getValue().toString());
                             startHoved();
+                            username.setText("");
+                            password.setText("");
 
                         } else {
                             throw new Exception("invalid password");
@@ -85,6 +88,8 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
 
         } else if(v == createUser){
+            username.setText("");
+            password.setText("");
             getFragmentManager().beginTransaction()
                     .replace(R.id.startlayout, new CreateUser())
                     .addToBackStack(null)
@@ -96,9 +101,13 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
     private void startHoved() {
 
+
         Intent i = new Intent(getActivity(),MainActivity.class);
         i.putExtra("username", userNameData);
         i.putExtra("spiritanimal", spiritanimal);
-        startActivity(i); }
+        startActivity(i);
+        getActivity().finish();
+
+    }
 }
 

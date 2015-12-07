@@ -3,6 +3,7 @@ package com.example.reskesen.toilettreasure;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.location.Address;
 import android.location.Criteria;
 import android.location.Geocoder;
@@ -10,6 +11,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.*;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +37,7 @@ import com.firebase.client.ValueEventListener;
  */
 public class PostMessage extends Activity implements View.OnClickListener, android.location.LocationListener {
 
+    boolean useLocation = true;
     Button post;
     EditText message;
     Firebase firebase;
@@ -65,13 +68,16 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
         locationManager  = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
         System.out.println("LocationManager er oprettet");
 
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getBaseContext());
+        useLocation = prefs.getBoolean("localization", true);
+
         System.out.println("Slut på oncreate");
 
     }
 
     @Override
     public void onClick(View v) {
-        if(v == post){
+        if(v == post) {
             final String text = message.getText().toString();
 
             final Firebase ref = firebase.child("PostCount");
@@ -100,7 +106,6 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
                 }
 
 
-
                 @Override
                 public void onCancelled(FirebaseError firebaseError) {
 
@@ -113,26 +118,26 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
     @Override
     protected void onResume() {
         super.onResume();
+        if (useLocation) {
 
-        final Geocoder geocoder = new Geocoder(this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+            final Geocoder geocoder = new Geocoder(this);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
 
-        new AsyncTask() {
-            @Override
-            protected Object doInBackground(Object... arg0) {
-                try {
-
-
-                    Criteria kriterium = new Criteria();
-                    kriterium.setAccuracy(Criteria.ACCURACY_FINE);
-                    String udbyder = locationManager.getBestProvider(kriterium, true); // giver "gps" hvis den er slået til
+            new AsyncTask() {
+                @Override
+                protected Object doInBackground(Object... arg0) {
+                    try {
 
 
+                        Criteria kriterium = new Criteria();
+                        kriterium.setAccuracy(Criteria.ACCURACY_FINE);
+                        String udbyder = locationManager.getBestProvider(kriterium, true); // giver "gps" hvis den er slået til
 
-                    if (udbyder == null) {
-                        //  textView.append("\n\nError! You haven't turned on any kind oflocalization providers. Turn on GPS or network-based localization and try again.");
-                        startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
-                    }
+
+                        if (udbyder == null) {
+                            //  textView.append("\n\nError! You haven't turned on any kind oflocalization providers. Turn on GPS or network-based localization and try again.");
+                            startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                        }
 /*
                     Location sted;
                     while(true){
@@ -144,49 +149,51 @@ public class PostMessage extends Activity implements View.OnClickListener, andro
 
                     }
                     */
-                    Location sted = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-                    //System.out.println(sted.toString());
+                        Location sted = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+                        //System.out.println(sted.toString());
 
-                    if (sted != null) {
-                        try {
+                        if (sted != null) {
+                            try {
 
-                            List<Address> adresser = geocoder.getFromLocation(sted.getLatitude(), sted.getLongitude(), 1);
+                                List<Address> adresser = geocoder.getFromLocation(sted.getLatitude(), sted.getLongitude(), 1);
 
-                            System.out.println(adresser.toString());
+                                System.out.println(adresser.toString());
 
-                            return adresser;
-                        } catch (IOException ex) {
-                            ex.printStackTrace();
+                                return adresser;
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        return e;
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(Object adresser2) {
+
+                    if (adresser2 == null) {
+                        location = "Location: unknown";
+                    } else {
+                        System.out.println("adresser er IKKE lig med null");
+                        List<Address> adresser = (List<Address>) adresser2;
+                        if (adresser != null && adresser.size() > 0) {
+                            Address adresse = adresser.get(0);
+                            location = "Location: " + adresse.getLocality();
+                            System.out.println("location " + location);
+                            //   textView.append("Current location: \n" + adresse.getLocality() + "\n\n");
                         }
                     }
 
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    return e;
                 }
-                return null;
-            }
-
-            @Override
-            protected void onPostExecute(Object adresser2) {
-
-                if(adresser2 == null){
-                    location = "Location: unknown";
-                }else {
-                    System.out.println("adresser er IKKE lig med null");
-                    List<Address> adresser = (List<Address>) adresser2;
-                    if (adresser != null && adresser.size() > 0) {
-                        Address adresse = adresser.get(0);
-                        location = "Location: " + adresse.getLocality();
-                        System.out.println("location " + location);
-                        //   textView.append("Current location: \n" + adresse.getLocality() + "\n\n");
-                    }
-                }
-
-            }
-        }.execute();
-
+            }.execute();
+        }else {
+            location = "Location: secret";
+        }
 
 
 
