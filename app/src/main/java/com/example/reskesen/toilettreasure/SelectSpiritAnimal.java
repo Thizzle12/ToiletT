@@ -145,7 +145,7 @@ public class SelectSpiritAnimal extends Activity implements AdapterView.OnItemCl
                 }
             });
 
-    this.finish();
+    finish();
 
     }
 

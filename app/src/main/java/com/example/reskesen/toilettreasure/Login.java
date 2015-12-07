@@ -65,8 +65,7 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
                             userNameData = username.getText().toString();
                             spiritanimal = Integer.parseInt(dataSnapshot.child(userNameData).child("spiritanimal").getValue().toString());
                             startHoved();
-                            username.setText("");
-                            password.setText("");
+
 
                         } else {
                             throw new Exception("invalid password");
@@ -88,8 +87,8 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
 
 
         } else if(v == createUser){
-            username.setText("");
-            password.setText("");
+
+
             getFragmentManager().beginTransaction()
                     .replace(R.id.startlayout, new CreateUser())
                     .addToBackStack(null)
@@ -106,7 +105,6 @@ public class Login extends android.support.v4.app.Fragment implements View.OnCli
         i.putExtra("username", userNameData);
         i.putExtra("spiritanimal", spiritanimal);
         startActivity(i);
-        getActivity().finish();
 
     }
 }

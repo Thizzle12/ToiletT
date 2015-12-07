@@ -104,6 +104,7 @@ public class ProfilePage extends android.support.v4.app.Fragment implements View
             Intent in = new Intent(getActivity(),SelectSpiritAnimal.class);
             in.putExtra("profilename", userName);
             startActivity(in);
+
         }else if(v == changePassword){
             Toast.makeText(getActivity(), "Under construction", Toast.LENGTH_SHORT).show();
         }

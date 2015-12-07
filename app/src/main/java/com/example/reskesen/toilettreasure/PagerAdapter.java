@@ -45,6 +45,7 @@ public class PagerAdapter extends FragmentPagerAdapter implements PagerSlidingTa
                 PostPage posting = new PostPage();
                 posting.setArguments(bundle2);
 
+
                 return posting;
             default:
                 return null;
